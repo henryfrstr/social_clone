@@ -8,5 +8,5 @@ from . import forms
 
 class UserRegister(CreateView):
     form_class = forms.UserRegisterForm
-    success_url = reverse_lazy('login')
+    success_url = reverse_lazy('accounts:login')
     template_name = "accounts/register.html"
